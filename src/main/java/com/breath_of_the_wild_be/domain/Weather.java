@@ -1,4 +1,5 @@
 package com.breath_of_the_wild_be.domain;
+<<<<<<< HEAD
 import java.util.List;
 import lombok.Data;
 
@@ -61,4 +62,8 @@ class WeatherInfo {
   private String main;
   private String description;
   private String icon;
+=======
+
+public class Weather {
+>>>>>>> ba7b9b2 (테스트)
 }
