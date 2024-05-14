@@ -1,6 +1,5 @@
 package com.breath_of_the_wild_be.controller;
 
-<<<<<<< HEAD
 import com.breath_of_the_wild_be.domain.Weather;
 import com.breath_of_the_wild_be.service.weatherService.WeatherService;
 import lombok.RequiredArgsConstructor;
@@ -22,7 +21,3 @@ public class WeatherController {
     return "Weather data fetched successfully.";
   }
 }
-=======
-public class WeatherController {
-}
->>>>>>> ba7b9b2 (테스트)
