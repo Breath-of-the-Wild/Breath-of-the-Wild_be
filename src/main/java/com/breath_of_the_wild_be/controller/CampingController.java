@@ -43,5 +43,10 @@ public class CampingController {
         campingService.deleteCamping(id);
     }
 
+    @PostMapping("/call")
+    public void fetchDataAndSaveToDatabase() {
+        campingService.fetchDataAndSaveToDatabase();
+    }
+
 
 }

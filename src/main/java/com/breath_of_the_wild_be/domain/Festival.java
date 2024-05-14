@@ -4,12 +4,13 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "Festival")
+@Data
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Table(name = "tbl_festival")
 public class Festival {
 
     @Id
@@ -18,10 +19,10 @@ public class Festival {
     private Long festivalId;
 
     @Column(name = "addr1")
-    private String address1;
+    private String addr1;
 
     @Column(name = "addr2")
-    private String address2;
+    private String addr2;
 
     @Column(name = "booktour")
     private String bookTour;
@@ -82,4 +83,6 @@ public class Festival {
 
     @Column(name = "title")
     private String title;
+
+
 }

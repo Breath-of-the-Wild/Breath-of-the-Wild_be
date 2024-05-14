@@ -15,5 +15,5 @@ public interface CampingService {
 
     void deleteCamping(Long id);
 
-
+    void fetchDataAndSaveToDatabase();
 }

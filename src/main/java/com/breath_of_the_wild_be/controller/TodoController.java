@@ -4,7 +4,7 @@ package com.breath_of_the_wild_be.controller;
 import com.breath_of_the_wild_be.dto.PageRequestDTO;
 import com.breath_of_the_wild_be.dto.PageResponseDTO;
 import com.breath_of_the_wild_be.dto.TodoDTO;
-import com.breath_of_the_wild_be.service.TodoService;
+import com.breath_of_the_wild_be.service.TodoService.TodoService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.*;
