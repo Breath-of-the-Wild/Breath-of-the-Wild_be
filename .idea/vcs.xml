@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+<<<<<<< HEAD
+=======
+    <mapping directory="$PROJECT_DIR$/Breath-of-the-Wild_be" vcs="Git" />
+>>>>>>> 1db11e3 ("날씨 api 엔티티로 호출 성공2")
   </component>
 </project>
