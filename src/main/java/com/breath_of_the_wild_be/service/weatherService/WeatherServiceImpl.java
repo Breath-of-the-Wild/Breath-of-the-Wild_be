@@ -14,7 +14,7 @@ import java.util.TimeZone;
 public class WeatherServiceImpl implements WeatherService {
 
   private final RestTemplate restTemplate;
-
+//수정 확인
   @Value("${openweathermap.apiKey}")
   private String apiKey;
 
