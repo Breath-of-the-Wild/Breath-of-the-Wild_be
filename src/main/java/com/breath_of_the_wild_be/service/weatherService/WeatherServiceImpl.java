@@ -16,6 +16,7 @@ import java.util.TimeZone;
 import java.util.stream.Collectors;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -233,15 +234,15 @@ public class WeatherServiceImpl implements WeatherService {
           cityData.getOrDefault("temp", 0.0) + calculateTemperatureScore(data.getMaxTemp(),
               data.getMinTemp()));
       cityData.put("pop",
-          cityData.getOrDefault("pop", 0.0) + calculateElementScore(data.getPop(), 0.15));
+          cityData.getOrDefault("pop", 0.0) + calculateElementScore(data.getPop(), 0.2));
       cityData.put("rain",
-          cityData.getOrDefault("rain", 0.0) + calculateElementScore(data.getRain(), 0.15));
+          cityData.getOrDefault("rain", 0.0) + calculateElementScore(data.getRain(), 0.2));
       cityData.put("speed",
-          cityData.getOrDefault("speed", 0.0) + calculateElementScore(data.getSpeed(), 0.25));
+          cityData.getOrDefault("speed", 0.0) + calculateElementScore(data.getSpeed(), 0.2));
       cityData.put("humidity",
           cityData.getOrDefault("humidity", 0.0) + calculateElementScore(data.getHumidity(), 0.2));
       cityData.put("clouds",
-          cityData.getOrDefault("clouds", 0.0) + calculateElementScore(data.getClouds(), 0.25));
+          cityData.getOrDefault("clouds", 0.0) + calculateElementScore(data.getClouds(), 0.2));
     }
 
     return aggregatedData;
@@ -284,4 +285,12 @@ public class WeatherServiceImpl implements WeatherService {
 
     return rankedCities;
   }
+
+//
+//
+//  @Scheduled(cron = "0 39 17 * * ?")
+//  public void fetchAndPrintWeatherDataScheduled() {
+//  printWeatherDataFromApi();
+//    System.out.println("Weather data fetched successfully.");
+//  }
 }

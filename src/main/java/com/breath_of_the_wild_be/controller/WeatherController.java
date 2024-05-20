@@ -26,14 +26,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class WeatherController {
 
     private final WeatherService weatherService;
-    private final WeatherRepository weatherRepository;
 
 
-    @GetMapping("/")
-    public String fetchWeatherData() {
-        weatherService.printWeatherDataFromApi();
-        return "Weather data fetched successfully.";
-    }
+//    @GetMapping("/")
+//    public String fetchWeatherData() {
+//        weatherService.printWeatherDataFromApi();
+//        return "Weather data fetched successfully.";
+//    }
 
 //    @GetMapping("/list")
 //    public ResponseEntity<List<Weather>> getAllWeather() {
