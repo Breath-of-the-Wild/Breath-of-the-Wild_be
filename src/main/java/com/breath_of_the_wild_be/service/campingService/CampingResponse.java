@@ -1,7 +1,9 @@
 package com.breath_of_the_wild_be.service.campingService;
 
+import com.breath_of_the_wild_be.config.ItemsDeserializer;
 import com.breath_of_the_wild_be.domain.Camping;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CampingResponse {
@@ -29,8 +31,22 @@ public class CampingResponse {
         }
     }
 
+//    @JsonIgnoreProperties(ignoreUnknown = true)
+//    public static class Body {
+//        private Items items;
+//
+//        public Items getItems() {
+//            return items;
+//        }
+//
+//        public void setItems(Items items) {
+//            this.items = items;
+//        }
+//    }
+
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Body {
+        @JsonDeserialize(using = ItemsDeserializer.class)
         private Items items;
 
         public Items getItems() {

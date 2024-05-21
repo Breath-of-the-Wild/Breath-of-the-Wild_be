@@ -1,5 +1,6 @@
 package com.breath_of_the_wild_be.config;
 
+import com.breath_of_the_wild_be.service.campingService.CampingService;
 import com.breath_of_the_wild_be.service.festivalService.FestivalService;
 import com.breath_of_the_wild_be.service.weatherService.WeatherService;
 import org.springframework.batch.core.Job;
@@ -37,7 +38,13 @@ public class BatchConfig {
   private FestivalService festivalService;
 
   @Autowired
+  private CampingService campingService;
+
+  @Autowired
   private JobLauncher jobLauncher;
+
+
+  //날씨데이터 스케쥴링-------------------------------------------------------
 
   @Bean
   public Job fetchWeatherJob() {
@@ -45,9 +52,6 @@ public class BatchConfig {
         .start(fetchWeatherStep())
         .build();
   }
-
-
-//날씨데이터 스케쥴링
 
   @Bean
   public Step fetchWeatherStep() {
@@ -60,7 +64,7 @@ public class BatchConfig {
   }
 
   @Scheduled(cron = "0 30 9 * * ?")
-  public void performJob() {
+  public void performWeatherJob() {
     try {
       JobParameters jobParameters = new JobParametersBuilder()
           .addLong("time", System.currentTimeMillis())
@@ -72,7 +76,8 @@ public class BatchConfig {
     }
   }
 
-//축제정보 스케쥴링
+
+//축제정보 스케쥴링-------------------------------------------------------
   @Bean
   public Job fetchAndSaveDataJob() {
     return new JobBuilder("fetchAndSaveDataJob", jobRepository)
@@ -102,4 +107,39 @@ public class BatchConfig {
       e.printStackTrace();
     }
   }
-}
+
+
+
+
+  //캠핑장 스케쥴링-------------------------------------------------------
+  @Bean
+  public Job fetchCampingJob() {
+    return new JobBuilder("fetchCampingJob", jobRepository)
+        .start(fetchCampingStep())
+        .build();
+  }
+
+  @Bean
+  public Step fetchCampingStep() {
+    return new StepBuilder("fetchCampingStep", jobRepository)
+        .tasklet((contribution, chunkContext) -> {
+          campingService.fetchAndSaveData();
+          return RepeatStatus.FINISHED;
+        }, transactionManager)
+        .build();
+  }
+
+  @Scheduled(cron = "0 50 10 * * ?") // 매일 새벽 1시에 실행
+  public void performCampingJob() {
+    try {
+      JobParameters jobParameters = new JobParametersBuilder()
+          .addLong("time", System.currentTimeMillis())
+          .toJobParameters();
+      jobLauncher.run(fetchCampingJob(), jobParameters);
+    } catch (Exception e) {
+      System.out.println("스케줄링 실패: " + e.getMessage());
+      e.printStackTrace();
+    }
+  }
+
+}//end of class

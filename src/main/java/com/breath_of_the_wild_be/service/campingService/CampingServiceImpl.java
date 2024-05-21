@@ -2,6 +2,7 @@ package com.breath_of_the_wild_be.service.campingService;
 
 import com.breath_of_the_wild_be.domain.Camping;
 import com.breath_of_the_wild_be.repository.campingRepository.CampingRepository;
+import com.breath_of_the_wild_be.service.campingService.CampingResponse.Items;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
@@ -157,7 +158,8 @@ public class CampingServiceImpl implements CampingService {
                 // 데이터가 없으면 페이지를 중단하고 다음 페이지로 넘어감
                 if (campings.length == 0) {
                     System.out.println("No data found on page " + pageNo + ". Moving to the next page...");
-                    continue;
+//                    continue;
+                    return;
                 }
 
                 saveCampingData(campings);
@@ -185,16 +187,29 @@ public class CampingServiceImpl implements CampingService {
         return result.toString();
     }
 
+//    public Camping[] parseJsonData(String jsonData) throws JsonProcessingException {
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        CampingResponse response = objectMapper.readValue(jsonData, CampingResponse.class);
+//        if (response != null && response.getResponse() != null && response.getResponse().getBody() != null &&
+//                response.getResponse().getBody().getItems() != null && response.getResponse().getBody().getItems().getItem() != null) {
+//            return response.getResponse().getBody().getItems().getItem();
+//        } else {
+//            return new Camping[0];
+//        }
+//    }
+
     public Camping[] parseJsonData(String jsonData) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
         CampingResponse response = objectMapper.readValue(jsonData, CampingResponse.class);
+
         if (response != null && response.getResponse() != null && response.getResponse().getBody() != null &&
-                response.getResponse().getBody().getItems() != null && response.getResponse().getBody().getItems().getItem() != null) {
+            response.getResponse().getBody().getItems() != null && response.getResponse().getBody().getItems().getItem() != null) {
             return response.getResponse().getBody().getItems().getItem();
         } else {
             return new Camping[0];
         }
     }
+
 
     public void saveCampingData(Camping[] campings) {
         for (Camping camping : campings) {
