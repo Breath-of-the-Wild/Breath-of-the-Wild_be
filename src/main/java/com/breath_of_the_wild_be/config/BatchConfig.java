@@ -63,7 +63,7 @@ public class BatchConfig {
         .build();
   }
 
-  @Scheduled(cron = "0 30 9 * * ?")
+  @Scheduled(cron = "0 15 12 * * ?") // 매일 새벽 1시에 실행
   public void performWeatherJob() {
     try {
       JobParameters jobParameters = new JobParametersBuilder()
@@ -95,7 +95,7 @@ public class BatchConfig {
         .build();
   }
 
-  @Scheduled(cron = "0 30 9 * * ?") // 매일 새벽 1시에 실행
+  @Scheduled(cron = "0 49 12 * * ?") // 매일 새벽 1시에 실행
   public void performFetchAndSaveDataJob() {
     try {
       JobParameters jobParameters = new JobParametersBuilder()
@@ -129,7 +129,7 @@ public class BatchConfig {
         .build();
   }
 
-  @Scheduled(cron = "0 50 10 * * ?") // 매일 새벽 1시에 실행
+  @Scheduled(cron = "0 15 12 * * ?") // 매일 새벽 1시에 실행
   public void performCampingJob() {
     try {
       JobParameters jobParameters = new JobParametersBuilder()

@@ -1,12 +1,11 @@
 package com.breath_of_the_wild_be.controller;
 
+import com.breath_of_the_wild_be.domain.Camping;
 import com.breath_of_the_wild_be.domain.Festival;
 import com.breath_of_the_wild_be.service.festivalService.FestivalService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,8 +21,25 @@ public class FestivalController {
         this.festivalService = festivalService;
     }
 
-    @PostMapping("/list")
+    @GetMapping("/all")
     public List<Festival> getAllFestivals() {
         return festivalService.getAllFestivals();
+    }
+
+    @GetMapping("/{contentid}")
+    public ResponseEntity<Festival> getFestivalByContentId(@PathVariable String contentid) {
+        Festival festival = festivalService.findByContentId(contentid);
+        if (festival != null) {
+            return ResponseEntity.ok(festival);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @GetMapping("/search")
+    public List<Festival> searchFestival(
+            @RequestParam String searchType,
+            @RequestParam String searchValue) {
+        return festivalService.searchFestival(searchType, searchValue);
     }
 }

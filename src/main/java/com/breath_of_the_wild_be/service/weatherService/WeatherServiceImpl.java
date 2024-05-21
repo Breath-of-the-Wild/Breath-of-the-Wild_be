@@ -16,7 +16,6 @@ import java.util.TimeZone;
 import java.util.stream.Collectors;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -286,11 +285,4 @@ public class WeatherServiceImpl implements WeatherService {
     return rankedCities;
   }
 
-//
-//
-//  @Scheduled(cron = "0 39 17 * * ?")
-//  public void fetchAndPrintWeatherDataScheduled() {
-//  printWeatherDataFromApi();
-//    System.out.println("Weather data fetched successfully.");
-//  }
 }

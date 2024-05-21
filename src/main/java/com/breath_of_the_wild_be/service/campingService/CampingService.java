@@ -1,6 +1,7 @@
 package com.breath_of_the_wild_be.service.campingService;
 
 import com.breath_of_the_wild_be.domain.Camping;
+import com.breath_of_the_wild_be.domain.Festival;
 
 import java.util.List;
 
@@ -17,4 +18,7 @@ public interface CampingService {
 
     void fetchAndSaveData();
 
+    List<Camping> searchCampings(String searchType, String searchValue);
+
+    Camping findByContentId(Long contentId);
 }

@@ -1,8 +1,8 @@
 package com.breath_of_the_wild_be.service.campingService;
 
 import com.breath_of_the_wild_be.domain.Camping;
+import com.breath_of_the_wild_be.domain.Festival;
 import com.breath_of_the_wild_be.repository.campingRepository.CampingRepository;
-import com.breath_of_the_wild_be.service.campingService.CampingResponse.Items;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
@@ -171,6 +171,7 @@ public class CampingServiceImpl implements CampingService {
 
 
 
+
     public String fetchJsonDataFromApi(String apiUrl) throws IOException {
         URL url = new URL(apiUrl);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -187,29 +188,16 @@ public class CampingServiceImpl implements CampingService {
         return result.toString();
     }
 
-//    public Camping[] parseJsonData(String jsonData) throws JsonProcessingException {
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        CampingResponse response = objectMapper.readValue(jsonData, CampingResponse.class);
-//        if (response != null && response.getResponse() != null && response.getResponse().getBody() != null &&
-//                response.getResponse().getBody().getItems() != null && response.getResponse().getBody().getItems().getItem() != null) {
-//            return response.getResponse().getBody().getItems().getItem();
-//        } else {
-//            return new Camping[0];
-//        }
-//    }
-
     public Camping[] parseJsonData(String jsonData) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
         CampingResponse response = objectMapper.readValue(jsonData, CampingResponse.class);
-
         if (response != null && response.getResponse() != null && response.getResponse().getBody() != null &&
-            response.getResponse().getBody().getItems() != null && response.getResponse().getBody().getItems().getItem() != null) {
+                response.getResponse().getBody().getItems() != null && response.getResponse().getBody().getItems().getItem() != null) {
             return response.getResponse().getBody().getItems().getItem();
         } else {
             return new Camping[0];
         }
     }
-
 
     public void saveCampingData(Camping[] campings) {
         for (Camping camping : campings) {
@@ -229,5 +217,23 @@ public class CampingServiceImpl implements CampingService {
 //        fetchAndSaveData();
 //    }
 
+    @Override
+    public List<Camping> searchCampings(String searchType, String searchValue) {
+        switch (searchType) {
+            case "facltNm":
+                return campingRepository.findByFacltNmContaining(searchValue);
+            case "addr1":
+                return campingRepository.findByAddr1Containing(searchValue);
+            // Add more cases as needed
+            default:
+                throw new IllegalArgumentException("Unknown search type: " + searchType);
+        }
+    }
+
+    @Override
+    public Camping findByContentId(Long contentId) {
+        Optional<Camping> campingOptional = campingRepository.findByContentId(contentId);
+        return campingOptional.orElse(null); // Alternatively, handle it according to your requirements
+    }
 }
 

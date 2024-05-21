@@ -79,7 +79,7 @@ git remote add origin https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_b
 
 rm -rf .git/
 
-git add *
+git add .
 
 git commit -m "테스트"
 

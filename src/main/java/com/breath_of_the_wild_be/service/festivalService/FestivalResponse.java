@@ -1,7 +1,10 @@
 package com.breath_of_the_wild_be.service.festivalService;
 
+import com.breath_of_the_wild_be.config.FestivalItemsDeserializer;
+import com.breath_of_the_wild_be.config.ItemsDeserializer;
 import com.breath_of_the_wild_be.domain.Festival;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class FestivalResponse {
@@ -31,6 +34,7 @@ public class FestivalResponse {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Body {
+        @JsonDeserialize(using = FestivalItemsDeserializer.class)
         private Items items;
 
         public Items getItems() {

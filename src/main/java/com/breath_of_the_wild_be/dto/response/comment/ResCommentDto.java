@@ -33,7 +33,7 @@ public class ResCommentDto {
 
     public static ResCommentDto fromEntity(Comment comment) {
         return ResCommentDto.builder()
-                .commentId(comment.getId())
+                .commentId(comment.getCommentid())
                 .content(comment.getContent())
                 .createdDate(comment.getCreatedDate())
                 .modifiedDate(comment.getModifiedDate())

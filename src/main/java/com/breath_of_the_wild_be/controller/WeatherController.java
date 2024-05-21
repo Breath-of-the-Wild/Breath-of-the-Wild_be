@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WeatherController {
 
     private final WeatherService weatherService;
+    private final WeatherRepository weatherRepository;
 
 
 //    @GetMapping("/")
@@ -48,6 +49,6 @@ public class WeatherController {
 
     @PostMapping("/abc1")
     public Map<Integer, Integer> aggregateWeatherData(@RequestBody DateRangeRequest dateRangeRequest) {
-    return weatherService.aggregateWeatherData(dateRangeRequest);
+        return weatherService.aggregateWeatherData(dateRangeRequest);
     }
 }

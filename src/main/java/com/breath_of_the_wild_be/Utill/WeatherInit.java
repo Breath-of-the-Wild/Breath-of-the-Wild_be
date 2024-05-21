@@ -15,7 +15,7 @@
 //            this.weatherService = weatherService;
 //        }
 //
-//       @PostConstruct
+//      @PostConstruct
 //        public void init() {
 //            weatherService.printWeatherDataFromApi();
 //        }

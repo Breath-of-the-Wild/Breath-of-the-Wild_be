@@ -23,7 +23,7 @@ public class Member extends BaseTimeEntity implements UserDetails {
 
     @Id @GeneratedValue
     @Column(name = "MEMBER_ID")
-    private Long id;
+    private Long memberid;
 
     // 이메일로 로그인함
     @Column(nullable = false)
@@ -61,7 +61,6 @@ public class Member extends BaseTimeEntity implements UserDetails {
     public void update(String password, String username) {
         this.password = password;
         this.username = username;
-        this.birth = birth;
     }
 
     //========== UserDetails implements ==========//

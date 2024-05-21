@@ -21,10 +21,10 @@ public class Camping {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long campid;
 
     @Column(name = "content_id", unique = true)
-    private String contentId;
+    private Long contentId;
 
     @Column(name = "facltNm")
     private String facltNm;
@@ -183,10 +183,10 @@ public class Camping {
     @Transient
     private String tooltip;
 
-    @Transient
+
     private String glampInnerFclty;
 
-    @Transient
+
     private String caravInnerFclty;
 
 
@@ -222,7 +222,6 @@ public class Camping {
 
     private String sbrsEtc;
 
-    @Transient
     private String posblFcltyCl;
 
     @Transient

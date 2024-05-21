@@ -36,6 +36,4 @@ project:
   folderPath: "files/"
 
 openweathermap:
-  apiKey: 5875c07a24e6e9876697423c7192dc2d
-
-
+    apiKey: 5875c07a24e6e9876697423c7192dc2d

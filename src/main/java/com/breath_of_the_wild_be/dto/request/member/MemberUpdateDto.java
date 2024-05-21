@@ -25,6 +25,5 @@ public class MemberUpdateDto {
         this.password = password;
         this.passwordCheck = passwordCheck;
         this.username = username;
-        this.birth = birth;
     }
 }

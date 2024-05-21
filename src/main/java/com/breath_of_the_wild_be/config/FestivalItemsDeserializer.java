@@ -1,13 +1,13 @@
 package com.breath_of_the_wild_be.config;
 
-import com.breath_of_the_wild_be.service.campingService.CampingResponse.Items;
+import com.breath_of_the_wild_be.service.festivalService.FestivalResponse.Items;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import java.io.IOException;
 
-public class ItemsDeserializer extends JsonDeserializer<Items> {
+public class FestivalItemsDeserializer extends JsonDeserializer<Items> {
 
   @Override
   public Items deserialize(JsonParser p, DeserializationContext ctxt)

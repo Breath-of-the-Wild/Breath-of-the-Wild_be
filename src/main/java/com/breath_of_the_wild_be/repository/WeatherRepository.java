@@ -23,4 +23,3 @@ public interface WeatherRepository extends JpaRepository<Weather, Long> {
 }
 
 
-

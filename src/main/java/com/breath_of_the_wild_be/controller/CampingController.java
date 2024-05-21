@@ -3,6 +3,8 @@ package com.breath_of_the_wild_be.controller;
 import com.breath_of_the_wild_be.domain.Camping;
 import com.breath_of_the_wild_be.service.campingService.CampingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,12 +21,21 @@ public class CampingController {
         this.campingService = campingService;
     }
 
-//    @GetMapping("/all")
-//    public List<Camping> getAllCampings() {
-//        return campingService.getAllCampings();
-//    }
+    @GetMapping("/all")
+    public List<Camping> getAllCampings() {
+        return campingService.getAllCampings();
+    }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{contentId}")
+    public ResponseEntity<Camping> getCampingByContentId(@PathVariable Long contentId) {
+        Camping camping = campingService.findByContentId(contentId);
+        if (camping != null) {
+            return ResponseEntity.ok(camping);
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
+    }
+    @GetMapping("/test/{id}")
     public Camping getCampingById(@PathVariable Long id) {
         return campingService.getCampingById(id);
     }
@@ -44,7 +55,12 @@ public class CampingController {
         campingService.deleteCamping(id);
     }
 
-
+    @GetMapping("/search")
+    public List<Camping> searchCampings(
+            @RequestParam String searchType,
+            @RequestParam String searchValue) {
+        return campingService.searchCampings(searchType, searchValue);
+    }
 
 
 }

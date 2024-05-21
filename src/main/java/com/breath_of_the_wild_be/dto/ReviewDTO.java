@@ -22,6 +22,6 @@ public class ReviewDTO {
     private Date lastModifiedDate;
     private String createdBy;
     private String lastModifiedBy;
-    private Long campId;
-    private Long memberId;
+    private Long contentId;
+    private String email;
 }

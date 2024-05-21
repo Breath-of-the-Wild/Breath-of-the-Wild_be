@@ -49,7 +49,7 @@ public class MemberController {
         return ResponseEntity.status(HttpStatus.OK).body(memberInfo);
     }
 
-    @PutMapping("/update")
+    @PostMapping("/update")
     public ResponseEntity<MemberResponseDto> update(
             @AuthenticationPrincipal Member member,
             @RequestBody MemberUpdateDto memberUpdateDTO) {

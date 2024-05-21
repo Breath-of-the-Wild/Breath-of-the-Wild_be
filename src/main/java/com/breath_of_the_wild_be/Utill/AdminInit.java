@@ -17,6 +17,6 @@
 //
 //    @PostConstruct
 //    public void initializeData() {
-////        memberService.adminregister();
+//        memberService.adminregister();
 //    }
 //}

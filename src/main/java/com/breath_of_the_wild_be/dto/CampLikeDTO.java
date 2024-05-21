@@ -15,6 +15,6 @@ public class CampLikeDTO {
     private Date createdDate;
     private Date lastModified;
     private Long campId;
-    private Long memberId;
+    private Long memberemail;
 
 }

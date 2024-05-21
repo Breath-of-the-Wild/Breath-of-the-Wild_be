@@ -30,8 +30,8 @@ public class CampLike {
     @Column(name = "camp_id", nullable = false)
     private Long campId;
 
-    @Column(name = "mno", nullable = false)
-    private Long mno;
+    @Column(name = "memberemail", nullable = false)
+    private String memberemail;
 
     // getters and setters
 }

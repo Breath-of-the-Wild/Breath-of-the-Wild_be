@@ -19,17 +19,19 @@ public class Review {
     @Column(name = "review_id")
     private Long reviewId;
 
-    @Column(name = "content", nullable = false)
+    @Column(name = "content")
     private String content;
 
     @Column(name = "image_file")
     private String imageFile;
 
-    @Column(name = "like_cnt", nullable = false)
-    private Integer likeCount;
+    @Builder.Default
+    @Column(name = "like_cnt")
+    private Integer likeCount = 0;
 
-    @Column(name = "rate_cnt", nullable = false)
-    private Integer rateCount;
+    @Builder.Default
+    @Column(name = "rate_cnt")
+    private Integer rateCount = 0;
 
     @Builder.Default
     @Column(name = "created_date")
@@ -44,9 +46,9 @@ public class Review {
     @Column(name = "last_modified_by")
     private String lastModifiedBy;
 
-    @Column(name = "camp_id", nullable = false)
-    private Long campId;
+    @Column(name = "camp_id")
+    private Long contentId;
 
-    @Column(name = "member_id", nullable = false)
-    private Long memberId;
+    @Column(name = "email")
+    private String mid;
 }

@@ -41,11 +41,15 @@ public class SecurityConfig {
                         .requestMatchers("api/board/list",
                                          "api/board/{boardId}",
                                          "api/board/search",
-                                         "api/festivals/list",
+                                         "api/festivals/all",
                                          "api/member/checkId",
                                          "api/member/register",
+                                         "api/member/update",
+                                         "api/festivals/**",
+                                         "api/festivals/search",
                                          "api/member/login",
                                          "api/board/{boardId}/comment/list/**",
+                                         "api/camping/**",
                                          "api/weather/**",
                                          "api/board/{boardId}/file/download/**").permitAll()
 
