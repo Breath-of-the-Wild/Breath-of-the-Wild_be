@@ -21,4 +21,7 @@ public interface CampingService {
     List<Camping> searchCampings(String searchType, String searchValue);
 
     Camping findByContentId(Long contentId);
+
+    List<Camping> getCampingListByRegion(String doNm);
+
 }

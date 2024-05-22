@@ -12,6 +12,10 @@ import java.util.Optional;
 public interface CampingRepository extends JpaRepository<Camping, Long> {
 
     Optional<Camping> findByContentId(Long contentId);
+
     List<Camping> findByFacltNmContaining(String facltNm);
+
     List<Camping> findByAddr1Containing(String addr1);
+
+    List<Camping> findByDoNm(String doNm);
 }

@@ -35,6 +35,18 @@ public class CampingController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
     }
+
+    @GetMapping("/list/{region}")
+    public ResponseEntity<List<Camping>> getCampingByRegion(@PathVariable String region) {
+        List<Camping> campingList = campingService.getCampingListByRegion(region);
+        if (campingList != null && !campingList.isEmpty()) {
+            return ResponseEntity.ok(campingList);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+
     @GetMapping("/test/{id}")
     public Camping getCampingById(@PathVariable Long id) {
         return campingService.getCampingById(id);

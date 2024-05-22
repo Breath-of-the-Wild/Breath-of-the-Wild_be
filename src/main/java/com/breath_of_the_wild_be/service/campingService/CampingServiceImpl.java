@@ -3,6 +3,7 @@ package com.breath_of_the_wild_be.service.campingService;
 import com.breath_of_the_wild_be.domain.Camping;
 import com.breath_of_the_wild_be.domain.Festival;
 import com.breath_of_the_wild_be.repository.campingRepository.CampingRepository;
+import com.breath_of_the_wild_be.service.RegionMapperConfig;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
@@ -235,5 +236,11 @@ public class CampingServiceImpl implements CampingService {
         Optional<Camping> campingOptional = campingRepository.findByContentId(contentId);
         return campingOptional.orElse(null); // Alternatively, handle it according to your requirements
     }
+
+    public List<Camping> getCampingListByRegion(String region) {
+        String mappedRegion = RegionMapperConfig.mapRegion(region);
+        return campingRepository.findByDoNm(mappedRegion);
+    }
 }
+
 
