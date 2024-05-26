@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    image: breathofthewild:latest
+    container_name: breathofthewild_app
+    environment:
+      - GOOGLE_OAUTH_CLIENT_ID=${GOOGLE_OAUTH_CLIENT_ID}
+      - GOOGLE_OAUTH_CLIENT_SECRET=${GOOGLE_OAUTH_CLIENT_SECRET}
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./images:/app/images
+    restart: unless-stopped
