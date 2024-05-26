@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.343s</div>
+<div class="counter">0.354s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.343s</td>
+<td class="success">0.354s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,8 +87,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>01:31:05.356 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.breath_of_the_wild_be.BreathOfTheWildBeApplicationTests]: BreathOfTheWildBeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-01:31:05.449 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.breath_of_the_wild_be.Breath_Of_The_Wild_BeApplication for test class com.breath_of_the_wild_be.BreathOfTheWildBeApplicationTests
+<pre>01:39:56.116 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.breath_of_the_wild_be.BreathOfTheWildBeApplicationTests]: BreathOfTheWildBeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:39:56.200 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.breath_of_the_wild_be.Breath_Of_The_Wild_BeApplication for test class com.breath_of_the_wild_be.BreathOfTheWildBeApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -98,38 +98,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::               (v3.1.11)
 
-2024-05-27T01:31:05.754+09:00  INFO 15984 --- [    Test worker] c.b.BreathOfTheWildBeApplicationTests    : Starting BreathOfTheWildBeApplicationTests using Java 17.0.9 with PID 15984 (started by g5626 in C:\Users\g5626\Downloads\feature1\Breath-of-the-Wild_be - 복사본240526 2035)
-2024-05-27T01:31:05.754+09:00  INFO 15984 --- [    Test worker] c.b.BreathOfTheWildBeApplicationTests    : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-05-27T01:31:06.252+09:00  INFO 15984 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 2 ms.
-2024-05-27T01:31:06.256+09:00  INFO 15984 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
-2024-05-27T01:31:06.256+09:00  INFO 15984 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Bean jobExplorer already defined in the application context, skipping the registration of a jobExplorer
-2024-05-27T01:31:06.256+09:00  INFO 15984 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
-2024-05-27T01:31:06.256+09:00  INFO 15984 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Bean jobRegistry already defined in the application context, skipping the registration of a jobRegistry
-2024-05-27T01:31:06.256+09:00  INFO 15984 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Bean jobOperator already defined in the application context, skipping the registration of a jobOperator
-2024-05-27T01:31:06.256+09:00  INFO 15984 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 0 ms.
-2024-05-27T01:31:06.447+09:00  INFO 15984 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-27T01:31:06.607+09:00  INFO 15984 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 8 JPA repository interfaces.
-2024-05-27T01:31:07.033+09:00  INFO 15984 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-27T01:31:07.084+09:00  INFO 15984 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.24.Final
-2024-05-27T01:31:07.085+09:00  INFO 15984 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2024-05-27T01:31:07.281+09:00  INFO 15984 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-27T01:31:07.306+09:00  INFO 15984 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-27T01:31:07.597+09:00  INFO 15984 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b6cad77
-2024-05-27T01:31:07.598+09:00  INFO 15984 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-27T01:31:07.670+09:00  WARN 15984 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-05-27T01:31:08.523+09:00  INFO 15984 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-27T01:31:08.739+09:00  INFO 15984 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-27T01:31:08.775+09:00  INFO 15984 --- [    Test worker] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
-2024-05-27T01:31:09.056+09:00  INFO 15984 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-05-27T01:31:09.394+09:00  INFO 15984 --- [    Test worker] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
-2024-05-27T01:31:09.638+09:00  INFO 15984 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
-2024-05-27T01:31:09.645+09:00  INFO 15984 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
-2024-05-27T01:31:09.647+09:00  INFO 15984 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
-2024-05-27T01:31:09.648+09:00  INFO 15984 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
-2024-05-27T01:31:09.649+09:00  INFO 15984 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
-2024-05-27T01:31:09.651+09:00  INFO 15984 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
-2024-05-27T01:31:10.164+09:00  INFO 15984 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73430c86, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@184d73af, org.springframework.security.web.context.SecurityContextHolderFilter@4f549906, org.springframework.security.web.header.HeaderWriterFilter@47e2a158, org.springframework.web.filter.CorsFilter@7ef9c234, org.springframework.security.web.authentication.logout.LogoutFilter@5e18309e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@40ee664c, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@52072c45, com.breath_of_the_wild_be.security.jwt.JwtAuthenticationFilter@1acfb04c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@329f649d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42b2319c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@580581b4, org.springframework.security.web.session.SessionManagementFilter@1fb66050, org.springframework.security.web.access.ExceptionTranslationFilter@2f29b7bd, org.springframework.security.web.access.intercept.AuthorizationFilter@4be7661]
-2024-05-27T01:31:10.538+09:00  INFO 15984 --- [    Test worker] c.b.BreathOfTheWildBeApplicationTests    : Started BreathOfTheWildBeApplicationTests in 4.972 seconds (process running for 5.877)
+2024-05-27T01:39:56.520+09:00  INFO 31940 --- [    Test worker] c.b.BreathOfTheWildBeApplicationTests    : Starting BreathOfTheWildBeApplicationTests using Java 17.0.9 with PID 31940 (started by g5626 in C:\Users\g5626\Downloads\feature1\Breath-of-the-Wild_be - 복사본240526 2035)
+2024-05-27T01:39:56.521+09:00  INFO 31940 --- [    Test worker] c.b.BreathOfTheWildBeApplicationTests    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-05-27T01:39:57.056+09:00  INFO 31940 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 2 ms.
+2024-05-27T01:39:57.061+09:00  INFO 31940 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Bean jobRepository already defined in the application context, skipping the registration of a jobRepository
+2024-05-27T01:39:57.061+09:00  INFO 31940 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Bean jobExplorer already defined in the application context, skipping the registration of a jobExplorer
+2024-05-27T01:39:57.062+09:00  INFO 31940 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Bean jobLauncher already defined in the application context, skipping the registration of a jobLauncher
+2024-05-27T01:39:57.062+09:00  INFO 31940 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Bean jobRegistry already defined in the application context, skipping the registration of a jobRegistry
+2024-05-27T01:39:57.062+09:00  INFO 31940 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Bean jobOperator already defined in the application context, skipping the registration of a jobOperator
+2024-05-27T01:39:57.062+09:00  INFO 31940 --- [    Test worker] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 0 ms.
+2024-05-27T01:39:57.238+09:00  INFO 31940 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-27T01:39:57.385+09:00  INFO 31940 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 8 JPA repository interfaces.
+2024-05-27T01:39:57.796+09:00  INFO 31940 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-27T01:39:57.849+09:00  INFO 31940 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-27T01:39:57.850+09:00  INFO 31940 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-05-27T01:39:58.093+09:00  INFO 31940 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-27T01:39:58.119+09:00  INFO 31940 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-27T01:39:58.484+09:00  INFO 31940 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53918b5e
+2024-05-27T01:39:58.488+09:00  INFO 31940 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-27T01:39:58.553+09:00  WARN 31940 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-27T01:39:59.378+09:00  INFO 31940 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-27T01:39:59.594+09:00  INFO 31940 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-27T01:39:59.658+09:00  INFO 31940 --- [    Test worker] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2024-05-27T01:39:59.921+09:00  INFO 31940 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-27T01:40:00.303+09:00  INFO 31940 --- [    Test worker] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2024-05-27T01:40:00.559+09:00  INFO 31940 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-05-27T01:40:00.571+09:00  INFO 31940 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-05-27T01:40:00.573+09:00  INFO 31940 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-05-27T01:40:00.574+09:00  INFO 31940 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-05-27T01:40:00.575+09:00  INFO 31940 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-05-27T01:40:00.577+09:00  INFO 31940 --- [    Test worker] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2024-05-27T01:40:01.021+09:00  INFO 31940 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6951e062, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@402cdec9, org.springframework.security.web.context.SecurityContextHolderFilter@65f68e96, org.springframework.security.web.header.HeaderWriterFilter@2f29b7bd, org.springframework.web.filter.CorsFilter@73430c86, org.springframework.security.web.authentication.logout.LogoutFilter@54b45cfe, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@2533cbcc, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@73eb57e6, com.breath_of_the_wild_be.security.jwt.JwtAuthenticationFilter@627a1c77, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f549906, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e2bdc58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@184d73af, org.springframework.security.web.session.SessionManagementFilter@47e2a158, org.springframework.security.web.access.ExceptionTranslationFilter@68bbd5c2, org.springframework.security.web.access.intercept.AuthorizationFilter@58ef1543]
+2024-05-27T01:40:01.307+09:00  INFO 31940 --- [    Test worker] c.b.BreathOfTheWildBeApplicationTests    : Started BreathOfTheWildBeApplicationTests in 4.995 seconds (process running for 5.869)
 </pre>
 </span>
 </div>
@@ -141,7 +141,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 2024. 5. 27. 오전 1:31:11</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 2024. 5. 27. 오전 1:40:01</p>
 </div>
 </div>
 </body>
