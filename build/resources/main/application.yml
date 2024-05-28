@@ -40,14 +40,14 @@ spring:
               - profile
               - email
           naver:
-            client-id: 8L5viblH4z1G4WPvAsDk
-            client-secret: Y9dZn8kyV_
+            client-id: ${NAVER_OAUTH_CLIENT_ID}
+            client-secret: ${NAVER_OAUTH_CLIENT_SECRET}
             redirect-uri: http://43.200.51.52:8080/login/oauth2/code/naver
             authorization-grant-type: authorization_code
             scope: name,email
           kakao:
-            client-id: 9f947f0215861ff651525d2f2bbeb240
-            client-secret: h7BoOAEC2HuF0ZAEPsEEPGLiIavlxISy
+            client-id: ${KAKAO_OAUTH_CLIENT_ID}
+            client-secret: ${KAKAO_OAUTH_CLIENT_SECRET}
             redirect-uri: http://43.200.51.52:8080/login/oauth2/code/kakao
             authorization-grant-type: authorization_code
             scope: profile_nickname

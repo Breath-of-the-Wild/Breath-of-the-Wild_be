@@ -23,6 +23,13 @@ jobs:
           echo "Setting up environment variables"
           echo "GOOGLE_OAUTH_CLIENT_ID=${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}" >> $GITHUB_ENV
           echo "GOOGLE_OAUTH_CLIENT_SECRET=${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}" >> $GITHUB_ENV
+          echo "NAVER_OAUTH_CLIENT_ID=${{ secrets.NAVER_OAUTH_CLIENT_ID }}" >> $GITHUB_ENV
+          echo "NAVER_OAUTH_CLIENT_SECRET=${{ secrets.NAVER_OAUTH_CLIENT_SECRET }}" >> $GITHUB_ENV
+          echo "KAKAO_OAUTH_CLIENT_ID=${{ secrets.KAKAO_OAUTH_CLIENT_ID }}" >> $GITHUB_ENV
+          echo "KAKAO_OAUTH_CLIENT_SECRET=${{ secrets.KAKAO_OAUTH_CLIENT_SECRET }}" >> $GITHUB_ENV
+          echo "OPENWEATHERMAP_APIKEY=${{ secrets.OPENWEATHERMAP_APIKEY }}" >> $GITHUB_ENV
+          echo "CAMP_APIKEY=${{ secrets.CAMP_APIKEY }}" >> $GITHUB_ENV
+          echo "FESTIVAL_APIKEY=${{ secrets.FESTIVAL_APIKEY }}" >> $GITHUB_ENV
 
       - name: Log in to Docker Hub
         run: |
@@ -53,3 +60,10 @@ jobs:
           GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
           GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          NAVER_OAUTH_CLIENT_ID: ${{ secrets.NAVER_OAUTH_CLIENT_ID }}
+          NAVER_OAUTH_CLIENT_SECRET: ${{ secrets.NAVER_OAUTH_CLIENT_SECRET }}
+          KAKAO_OAUTH_CLIENT_ID: ${{ secrets.KAKAO_OAUTH_CLIENT_ID }}
+          KAKAO_OAUTH_CLIENT_SECRET: ${{ secrets.KAKAO_OAUTH_CLIENT_SECRET }}
+          OPENWEATHERMAP_APIKEY: ${{ secrets.OPENWEATHERMAP_APIKEY }}
+          CAMP_APIKEY: ${{ secrets.CAMP_APIKEY }}
+          FESTIVAL_APIKEY: ${{ secrets.FESTIVAL_APIKEY }}
