@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    image: breathofthewild:latest
+    container_name: breathofthewild_app
+    environment:
+      - GOOGLE_OAUTH_CLIENT_ID=${GOOGLE_OAUTH_CLIENT_ID}
+      - GOOGLE_OAUTH_CLIENT_SECRET=${GOOGLE_OAUTH_CLIENT_SECRET}
+      - NAVER_OAUTH_CLIENT_ID=${NAVER_OAUTH_CLIENT_ID}
+      - NAVER_OAUTH_CLIENT_SECRET=${NAVER_OAUTH_CLIENT_SECRET}
+      - KAKAO_OAUTH_CLIENT_ID=${KAKAO_OAUTH_CLIENT_ID}
+      - KAKAO_OAUTH_CLIENT_SECRET=${KAKAO_OAUTH_CLIENT_SECRET}
+      - OPENWEATHERMAP_APIKEY=${OPENWEATHERMAP_APIKEY}
+      - CAMP_APIKEY=${CAMP_APIKEY}
+      - FESTIVAL_APIKEY=${FESTIVAL_APIKEY}
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./images:/app/images
+    restart: unless-stopped
