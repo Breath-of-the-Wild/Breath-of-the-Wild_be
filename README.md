@@ -76,31 +76,31 @@
 
 ## **🚀 수행 결과**
 
-#### -메인 페이지- <br>
+#### -메인 페이지-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/d12d9229-b79f-4074-aa65-22ef1cf1bc34)
 
 #### -검색 페이지-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/fe3abdd6-b7ab-4e03-aac8-371067a063ec)
 
--로그인-
+####-로그인-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/bdc9a80b-ea62-4a8b-a7d1-486989427430)
 
-![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/090cb5b3-9fdd-4d05-8bee-a38066e11a74)
+![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/85cda588-f528-4f40-8de2-874808fa8660)
 
 
 
--소셜 로그인-
+####-소셜 로그인-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/871bafca-fd62-4274-b092-93f7ffb451ae)
 
 
--날씨 기반 캠핑장 추천-
+####-날씨 기반 캠핑장 추천-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/73c121b9-33e7-40c8-ad61-6b26002aee7f)
 
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/127b4c8e-6eb6-42c9-9ef7-33d48645f969)
 
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/d2bdd33d-8c71-44ae-a1da-401a605f5a79)
 
--배치&스케줄러-
+####-배치&스케줄러-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/1779d8c5-a41b-44f5-aaa8-ea4011378f06)
 
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/0ff5ad91-971b-4b5e-97ae-98dd83ba842c)
