@@ -101,8 +101,10 @@
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/d2bdd33d-8c71-44ae-a1da-401a605f5a79)
 
 ####-배치&스케줄러-
-![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/1779d8c5-a41b-44f5-aaa8-ea4011378f06)
+![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/5be3a32b-06d7-453b-b447-1c19efab1b82)
 
-![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/0ff5ad91-971b-4b5e-97ae-98dd83ba842c)
+
+![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/bc1464a1-54de-4e45-847e-c1d5880bb6d2)
+
 
 
