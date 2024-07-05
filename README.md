@@ -76,16 +76,17 @@
 
 ## **🚀 수행 결과**
 
--메인 페이지-
+#### -메인 페이지- <br>
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/d12d9229-b79f-4074-aa65-22ef1cf1bc34)
 
--검색 페이지-
+#### -검색 페이지-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/fe3abdd6-b7ab-4e03-aac8-371067a063ec)
 
 -로그인-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/bdc9a80b-ea62-4a8b-a7d1-486989427430)
 
-![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/292930bd-cf32-4b6f-a1c3-adda4cd0da38)
+![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/090cb5b3-9fdd-4d05-8bee-a38066e11a74)
+
 
 
 -소셜 로그인-
