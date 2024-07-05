@@ -82,26 +82,27 @@
 #### -검색 페이지-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/fe3abdd6-b7ab-4e03-aac8-371067a063ec)
 
-####-로그인-
+#### -로그인-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/bdc9a80b-ea62-4a8b-a7d1-486989427430)
 
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/85cda588-f528-4f40-8de2-874808fa8660)
 
 
 
-####-소셜 로그인-
+#### -소셜 로그인-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/871bafca-fd62-4274-b092-93f7ffb451ae)
 
 
-####-날씨 기반 캠핑장 추천-
+#### -날씨 기반 캠핑장 추천-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/73c121b9-33e7-40c8-ad61-6b26002aee7f)
 
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/127b4c8e-6eb6-42c9-9ef7-33d48645f969)
 
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/d2bdd33d-8c71-44ae-a1da-401a605f5a79)
 
-####-배치&스케줄러-
-![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/5be3a32b-06d7-453b-b447-1c19efab1b82)
+#### -배치&스케줄러-
+![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/33866071-f1a3-4a72-b74d-039fc5b64de8)
+
 
 
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/bc1464a1-54de-4e45-847e-c1d5880bb6d2)
