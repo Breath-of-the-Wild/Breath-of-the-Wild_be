@@ -71,7 +71,8 @@
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/702b79db-d617-41dc-a7b5-d10baa9c5f7e)
  
 ## 👥 팀 구성
-![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/abdc1f2a-2d9b-4736-9f23-ea69e333e5ae)
+![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/81801f35-21c0-491f-8244-cfd128d9761f)
+
 
 ## **🚀 수행 결과**
 
@@ -84,10 +85,12 @@
 -로그인-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/bdc9a80b-ea62-4a8b-a7d1-486989427430)
 
-![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/f95ece01-1495-455c-b007-fbd441c1d4a7)
+![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/292930bd-cf32-4b6f-a1c3-adda4cd0da38)
+
 
 -소셜 로그인-
-![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/d30700e1-25cd-404c-a251-7da3027fe382)
+![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/871bafca-fd62-4274-b092-93f7ffb451ae)
+
 
 -날씨 기반 캠핑장 추천-
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/73c121b9-33e7-40c8-ad61-6b26002aee7f)
