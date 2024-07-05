@@ -58,6 +58,8 @@
 ## **🛠️ 개발 환경**
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/15663f9f-53cf-4ee0-a9a4-29b9a3a439ef)
 
+## 👥 팀 구성
+![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/81801f35-21c0-491f-8244-cfd128d9761f)
 ## **👬 기능 명세서**
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/29534387-46b4-462e-b29c-019ea0010493)
 
@@ -70,9 +72,6 @@
 ## **🖥️ ERD**
 ![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/702b79db-d617-41dc-a7b5-d10baa9c5f7e)
  
-## 👥 팀 구성
-![image](https://github.com/Breath-of-the-Wild/Breath-of-the-Wild_be/assets/78581994/81801f35-21c0-491f-8244-cfd128d9761f)
-
 
 ## **🚀 수행 결과**
 
